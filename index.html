@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h2>Tower of Hanoi</h2>
+    </header>
+
+    <p>Enter number of Disks upto 5</p>
+    <div class="inputs">
+        <input id="disks-input" type="number" min="1" max="5" placeholder="Enter Disks">
+        <button class="btn" onclick="startTower()">Start</button>
+        <button class="btn" id="restart-btn">Restart</button>
+    </div>
+
+    <div class="container">
+        <div class="tower" id="tower-one">
+            <span class="disc" id="one">1</span>
+            <span class="disc" id="two">2</span>
+            <span class="disc" id="three">3</span>
+            <span class="disc" id="four">4</span>
+            <span class="disc" id="five">5</span>
+        </div>
+        <div class="tower" id="tower-two">
+            <span class="disc" id="one">1</span>
+            <span class="disc" id="two">2</span>
+            <span class="disc" id="three">3</span>
+            <span class="disc" id="four">4</span>
+            <span class="disc" id="five">5</span>
+        </div>
+        <div class="tower" id="tower-three">
+            <span class="disc" id="one">1</span>
+            <span class="disc" id="two">2</span>
+            <span class="disc" id="three">3</span>
+            <span class="disc" id="four">4</span>
+            <span class="disc" id="five">5</span>
+        </div>
+    </div>
+
+    <div class="log">
+        <p id="logs"></p>
+        <p id="moves"></p>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
